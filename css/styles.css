@@ -1,0 +1,84 @@
+
+.root {
+
+}
+
+:root {
+  --background-color: ;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md{
+  font-size: xx-large;
+}
+
+.material-icons.md.logo{
+  font-size: xxx-large;
+}
+
+/* TODO
+    Choose suitable icon and font size
+    Make a sidebar button be a flex container with icon and text */
+
+
+.sidebar {
+  background-color: #1992D4;
+  color: #FFFFFF;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: min(33vw, 300px);
+  grid-template-rows: 10vh 33vh 47vh;
+  padding-right: 20px;
+
+}
+
+.sidebar-logo-container {
+  display: grid;
+  grid-template-columns: 56px auto;
+  justify-content: left;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding-left: 32px;
+}
+
+ul {
+  display: grid;
+  list-style-type: none;
+  row-gap: 14px;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 48px auto;
+  justify-content: left;
+  align-items: center;
+  font-size: large;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* TODO
+    1. Dashboard sidebar with 3 blocks
+      1. Logo + name https://fonts.google.com/icons?icon.set=Material+Icons&icon.platform=web
+      2. Main menu
+      3. Technical Menu
+    2. Main block
+      1. Navbar with search, profile notifications
+      2. Second navbar block with name and action buttons
+    3. Content block
+      1. Two Blocks
+        1. Your Projects container with cards and title
+        2. Content right sidebar for announcements and Trending */
