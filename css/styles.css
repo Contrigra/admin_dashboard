@@ -10,23 +10,53 @@
 
 body {
   display: flex;
+
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.material-icons-outlined.md-18 {
+  font-size: 18px;
+}
+
+.material-icons-outlined.md-24 {
+  font-size: 24px;
+}
+
+.material-icons-outlined.md-36 {
+  font-size: 36px;
+
+}
+
+.material-icons-outlined.md-48 {
+  font-size: 48px;
 }
 
 .material-icons.md-light {
   color: rgba(255, 255, 255, 1);
 }
 
-.material-icons.md{
+.material-icons.md {
   font-size: xx-large;
 }
 
-.material-icons.md.logo{
+.material-icons.md.logo {
   font-size: xxx-large;
 }
-
-/* TODO
-    Choose suitable icon and font size
-    Make a sidebar button be a flex container with icon and text */
 
 
 .sidebar {
@@ -34,7 +64,7 @@ body {
   color: #FFFFFF;
   display: grid;
   height: 100vh;
-  grid-template-columns: min(33vw, 300px);
+  grid-template-columns: min(40vw, 300px);
   grid-template-rows: 10vh 33vh 47vh;
   padding-right: 20px;
 
@@ -64,9 +94,84 @@ li {
   font-size: large;
 }
 
+.navbar {
+  width: 100%;
+  background-color: dimgrey;
+}
+
+.navbar-first-line {
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.notification-container {
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  grid-template-columns: 36px 50px 200px;
+  gap: 16px
+}
+
+.searchbar-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: max-content auto;
+}
+
+.search-icon {
+  margin-left: 32px;
+  width: 42px;
+  justify-self: start;
+}
+
+#searchbar {
+  width: max(33%, 300px);
+  padding: 8px;
+  justify-self: start;
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 24px;
+
+}
+
 .content-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  width: 100%;
+}
+
+.profile-pic {
+  border-radius: 80px;
+  justify-self: end;
+}
+
+.profile-pic.big {
+  margin-left: 32px;
+  height: 80px;
+  border-radius: 80px;
+}
+
+.profile-pic.small {
+  height: 50px;
+}
+
+.material-icons-outlined.notification {
+  justify-self: end;
+}
+
+.profile-info {
+  font-size: large;
+  font-weight: bold;
+  justify-self: start;
+  margin-left: 8px;
+}
+
+.navbar-second-line {
+  background-color: antiquewhite;
 }
 
 

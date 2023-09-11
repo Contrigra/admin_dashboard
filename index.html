@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|"
         rel="stylesheet">
   <title>Document</title>
 </head>
@@ -21,20 +22,34 @@
   <div class="sidebar-main-menu">
     <ul>
       <li>
-        <div class="material-icons md-light md">home</div><div>Home</div>
+        <div class="material-icons md-light md">home</div>
+        <div>Home</div>
       </li>
-      <li><div class="material-icons md-light md">account_circle</div><div>Profile</div>
+      <li>
+        <div class="material-icons md-light md">account_circle</div>
+        <div>Profile</div>
       </li>
-      <li><div
-              class="material-icons md-light md">message</div><div>Messages</div>
+      <li>
+        <div
+                class="material-icons md-light md">message
+        </div>
+        <div>Messages</div>
       </li>
-      <li><div
-              class="material-icons md-light md">history</div><div>History</div>
+      <li>
+        <div
+                class="material-icons md-light md">history
+        </div>
+        <div>History</div>
       </li>
-      <li><div
-              class="material-icons md-light md">task_alt</div><div>Tasks</div>
+      <li>
+        <div
+                class="material-icons md-light md">task_alt
+        </div>
+        <div>Tasks</div>
       </li>
-      <li><div class="material-icons md-light md">groups</div><div>Communities</div>
+      <li>
+        <div class="material-icons md-light md">groups</div>
+        <div>Communities</div>
       </li>
     </ul>
   </div>
@@ -49,18 +64,35 @@
   </div>
 </div>
 <div class="content-container">
-  <div class="navbar">
+  <nav class="navbar">
     <div class="navbar-first-line">
-      <div class="searchbar">search</div>
-      <div class="profile-info">Morgan Oakley</div>
+
+      <div class="searchbar-container">
+        <div class="material-icons-outlined md-36 search-icon">search</div>
+        <label>
+          <input id="searchbar" type="search" placeholder="Search..">
+        </label>
+      </div>
+
+
+      <div class="notification-container">
+        <div class="material-icons-outlined md-36 notification">
+          notifications_active
+        </div>
+        <img class="profile-pic small" src="img/img.png" alt="">
+        <div class="profile-info">Morgan Oakley</div>
+      </div>
     </div>
+
     <div class="navbar-second-line">
+      <img class="profile-pic big" src="img/img.png" alt="">
+
       hi there
       <button>New</button>
       <button>Upload</button>
       <button>Share</button>
     </div>
-  </div>
+  </nav>
   <div class="main-container">
     <div class="main-container-info"></div>
     <div class="main-container-content">
