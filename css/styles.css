@@ -96,14 +96,13 @@ li {
 
 .navbar {
   width: 100%;
-  background-color: dimgrey;
 }
 
 .navbar-first-line {
   background-color: white;
 
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: max(70%, 500px) 30%;
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -124,7 +123,7 @@ li {
 }
 
 .search-icon {
-  margin-left: 32px;
+  margin-left: 16px;
   width: 42px;
   justify-self: start;
 }
@@ -136,6 +135,7 @@ li {
   background-color: #e2e8f0;
   border: none;
   border-radius: 24px;
+  margin-right: 100px;
 
 }
 
@@ -150,7 +150,6 @@ li {
 }
 
 .profile-pic.big {
-  margin-left: 32px;
   height: 80px;
   border-radius: 80px;
 }
@@ -171,10 +170,53 @@ li {
 }
 
 .navbar-second-line {
-  background-color: antiquewhite;
+  display: grid;
+
+  /* 148 px = pic size + width of search icon container so pic would align with the searchbar*/
+  grid-template-columns: 134px 30% 60%;
+  align-items: center;
+
 }
 
+.profile-info-second-line {
+  justify-content: start;
+}
 
+.profile-info-second-line > div {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.button-container {
+  display: grid;
+  justify-content: end;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.button-container>button {
+  border: none;
+  background-color: #1992D4;
+
+  width: 120px;
+  padding: 12px;
+  border-radius: 24px;
+
+  font-size: large;
+  font-weight: bolder;
+  color: #fdfdfd;
+}
+
+.profile-info-second-line {
+  margin-left: 12px;
+  line-height: 24px;
+  font-weight: bolder;
+}
+
+.profile-info-second-line>span {
+  font-size: 24px;
+  font-weight: bolder;
+}
 /* TODO
     1. Dashboard sidebar with 3 blocks
       1. Logo + name https://fonts.google.com/icons?icon.set=Material+Icons&icon.platform=web
