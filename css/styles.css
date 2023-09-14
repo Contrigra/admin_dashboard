@@ -8,6 +8,7 @@
   font-family: 'Rubik', sans-serif;
 }
 
+
 body {
   display: flex;
 
@@ -94,9 +95,6 @@ li {
   font-size: large;
 }
 
-.navbar {
-  width: 100%;
-}
 
 .navbar-first-line {
   background-color: white;
@@ -142,7 +140,10 @@ li {
 .content-container {
   display: grid;
   width: 100%;
+  grid-auto-rows: 17% 83%;
+
 }
+
 
 .profile-pic {
   border-radius: 80px;
@@ -172,7 +173,7 @@ li {
 .navbar-second-line {
   display: grid;
 
-  /* 148 px = pic size + width of search icon container so pic would align with the searchbar*/
+  /* 134 px = pic size + width of search icon container so pic would align with the searchbar*/
   grid-template-columns: 134px 30% 60%;
   align-items: center;
 
@@ -180,6 +181,8 @@ li {
 
 .profile-info-second-line {
   justify-content: start;
+
+
 }
 
 .profile-info-second-line > div {
@@ -194,7 +197,7 @@ li {
   gap: 20px;
 }
 
-.button-container>button {
+.button-container > button {
   border: none;
   background-color: #1992D4;
 
@@ -213,10 +216,42 @@ li {
   font-weight: bolder;
 }
 
-.profile-info-second-line>span {
+.profile-info-second-line > span {
   font-size: 24px;
   font-weight: bolder;
 }
+
+
+.main-container {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  background-color: #e2e8f0;
+  box-shadow: lightgrey 2px 3px 4px inset;
+}
+
+.project-card-container {
+  display: grid;
+}
+
+.main-container-content {
+  display: grid;
+  grid-template-rows: 8% 92%;
+}
+
+.main-container-title.project {
+  font-weight: bolder;
+  font-size: x-large;
+
+  margin: 8px;
+  align-self: end;
+
+}
+
+.project-card {
+  border: 1px dotted #1992D4;
+  margin: 8px;
+}
+
 /* TODO
     1. Dashboard sidebar with 3 blocks
       1. Logo + name https://fonts.google.com/icons?icon.set=Material+Icons&icon.platform=web
