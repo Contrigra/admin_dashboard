@@ -182,7 +182,6 @@ li {
 .profile-info-second-line {
   justify-content: start;
 
-
 }
 
 .profile-info-second-line > div {
@@ -238,7 +237,7 @@ li {
   grid-template-rows: 8% 92%;
 }
 
-.main-container-title.project {
+.main-container-title {
   font-weight: bolder;
   font-size: x-large;
 
@@ -248,8 +247,44 @@ li {
 }
 
 .project-card {
-  border: 1px dotted #1992D4;
+  border-radius: 16px;
+  background-color: #ffffff;
+  padding: 16px;
   margin: 8px;
+
+}
+
+.right-sidebar {
+  display: grid;
+  grid-template-rows: 8% fit-content(270px);
+}
+
+.announcement-card-container {
+  display: grid;
+  grid-auto-rows: max-content;
+  border-radius: 16px;
+  background-color: #ffffff;
+  margin: 8px 32px 8px 8px;
+  padding: 24px 16px;
+}
+
+.announcement-card {
+  margin: 8px;
+  padding-top: 12px;
+  border-top: thin lightgrey solid;
+
+
+
+}
+
+.announcement-card:last-child {
+  border-top: thin lightgrey solid;
+  margin-bottom: 0;
+
+}.announcement-card:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
 }
 
 /* TODO
