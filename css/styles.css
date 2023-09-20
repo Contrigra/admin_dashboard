@@ -68,7 +68,6 @@ body {
   grid-template-columns: min(40vw, 300px);
   grid-template-rows: 10vh 33vh 47vh;
   padding-right: 20px;
-
 }
 
 .sidebar-logo-container {
@@ -140,7 +139,7 @@ li {
 .content-container {
   display: grid;
   width: 100%;
-  grid-auto-rows: 17% 83%;
+  grid-template-rows: 17% 83%;
 
 }
 
@@ -228,9 +227,6 @@ li {
   box-shadow: lightgrey 2px 3px 4px inset;
 }
 
-.project-card-container {
-  display: grid;
-}
 
 .main-container-content {
   display: grid;
@@ -241,18 +237,11 @@ li {
   font-weight: bolder;
   font-size: x-large;
 
-  margin: 8px;
+  margin: 8px 8px 8px 32px;
   align-self: end;
 
 }
 
-.project-card {
-  border-radius: 16px;
-  background-color: #ffffff;
-  padding: 16px;
-  margin: 8px;
-
-}
 
 .right-sidebar {
   display: grid;
@@ -272,20 +261,36 @@ li {
   margin: 8px;
   padding-top: 12px;
   border-top: thin lightgrey solid;
-
-
-
 }
 
 .announcement-card:last-child {
   border-top: thin lightgrey solid;
   margin-bottom: 0;
 
-}.announcement-card:first-child {
+}
+
+.announcement-card:first-child {
   margin-top: 0;
   padding-top: 0;
   border-top: none;
 }
+
+.project-card-container {
+  display: grid;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.project-card {
+
+  border-radius: 16px;
+  border-left: #f0b429 solid 8px;
+  background-color: #ffffff;
+  padding: 16px;
+  margin: 8px 32px 32px;
+
+}
+
 
 /* TODO
     1. Dashboard sidebar with 3 blocks
