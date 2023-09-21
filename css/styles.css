@@ -237,15 +237,51 @@ li {
   font-weight: bolder;
   font-size: x-large;
 
-  margin: 8px 8px 8px 32px;
+  margin: 8px 8px 8px 8px;
   align-self: end;
 
+}
+
+.main-container-title.project {
+  margin-left: 56px;
 }
 
 
 .right-sidebar {
   display: grid;
-  grid-template-rows: 8% fit-content(270px);
+  grid-template-rows: 8% 40% min-content;
+  align-items: start;
+}
+
+
+.trending-container-content {
+  background-color: #ffffff;
+  box-shadow: lightgrey 2px 3px 4px;
+  margin: 8px 32px 8px 8px;
+  padding: 24px 16px;
+  border-radius: 16px;
+
+  display: grid;
+  gap: 16px;
+
+}
+
+.trending-card {
+  display: grid;
+  grid-template-columns: fit-content(50px) 1fr;
+  grid-template-rows: 50px;
+  gap: 16px;
+  margin: 0 8px;
+  align-items: center;
+}
+
+.trending-profile-name {
+  font-weight: 600;
+}
+
+
+.project-name-grey {
+  color: #767676;
 }
 
 .announcement-card-container {
@@ -275,6 +311,7 @@ li {
   border-top: none;
 }
 
+
 .project-card-container {
   display: grid;
   grid-template-rows: repeat(3, 250px);
@@ -290,12 +327,13 @@ li {
   padding: 16px;
   margin: 8px 32px 32px;
 
+  box-shadow: lightgrey 2px 3px 4px;
 }
 
 .card-title {
   margin: 8px 0;
   font-weight: bolder;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .card-buttons {
