@@ -3,12 +3,18 @@ const clamp = require('clamp-js')
 
 const announcementCards = document.querySelectorAll('.announcement-card');
 
+const cardText = document.querySelectorAll('.card-text');
 
-
+// clamping the size of announcement cards
 for (let announcement of announcementCards) {
     console.log(announcement)
-    clamp(announcement, {clamp: 4, truncationHTML: '<br>'})
+    clamp(announcement, {clamp: 4})
 }
+
+cardText.forEach(e => {clamp(e, {clamp: 4})})
+
+
+
 },{"clamp-js":2}],2:[function(require,module,exports){
 /*!
  * Clamp.js 0.7.0
