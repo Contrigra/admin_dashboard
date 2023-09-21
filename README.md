@@ -1,3 +1,7 @@
+# Important! 
+
+Website was designed with 90% zoom in mind :) Even though there is a meta tag for initial-scale, it may not work properly
+
 # What is this all about?
 
 This is the final project of the Odin Project's Intermediate HTML and CSS
